@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+<listeners>
+		<listener class-name="resources.Listeners" />
+		<listener class-name="resources.ExtentReporter" />
+		<listener class-name="resources.AnnontaionTransformer" />
+	</listeners>
+	<test name="Verify Add City">
+		<classes>
+			<class name="rest.city.api.AddCityTest" />
+		</classes>
+	</test>
+	<test name="Verify Find City">
+		<classes>
+			<class name="rest.city.api.FindCityByIdTest" />
+		</classes>
+	</test>
+	<test name="Verify Update City">
+		<classes>
+			<class name="rest.city.api.UpdateCityTest" />
+		</classes>
+	</test>
+	<test name="Verify Partial Update City">
+		<classes>
+			<class name="rest.city.api.PartialUpdateCityTest" />
+		</classes>
+	</test>
+	<test name="Verify Delete City">
+		<classes>
+			<class name="rest.city.api.DeleteCityTest" />
+		</classes>
+	</test>
+</suite>

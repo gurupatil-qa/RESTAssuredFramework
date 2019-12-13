@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
+  <listeners>
+    <listener class-name="resources.Listeners"/>
+    <listener class-name="resources.ExtentReporter"/>
+    <listener class-name="resources.AnnontaionTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Verify Partial Update City(failed)">
+    <classes>
+      <class name="rest.city.api.PartialUpdateCityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyPartialUpdateCity" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- rest.city.api.PartialUpdateCityTest -->
+    </classes>
+  </test> <!-- Verify Partial Update City(failed) -->
+</suite> <!-- Failed suite [Regression] -->
